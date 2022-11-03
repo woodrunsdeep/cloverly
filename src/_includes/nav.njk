@@ -1,0 +1,39 @@
+{% set nav = [
+	{
+		title: "Product",
+		url: "/product/"
+	},
+	{
+		title: "Use Cases",
+		url: "/cases/"
+	},
+	{
+		title: "Developers",
+		url: "/developers/"
+	},
+	{
+		title: "Pricing",
+		url: "/pricing/"
+	},
+	{
+		title: "About",
+		url: "/about/"
+}] %}
+
+<nav class="nav">
+	<ul class="nav__list">
+		{% for item in nav %}
+			<li class="nav__item">
+				<a href="{{ item.url }}" class="nav__link">{{ item.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<ul class="nav__list">
+		<li class="nav__item">
+			<a href="/login/" class="nav__link">Login</a>
+		</li>
+		<li class="nav__item">
+			<a href="/api-keys/" class="nav__link button">Get API Keys</a>
+		</li>
+	</ul>
+</nav>
