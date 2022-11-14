@@ -1,0 +1,9 @@
+.full-bleed {
+	width: 100vw;
+  	margin-left: calc(50% - 50vw);
+}
+
+/*
+	Technic was taken from Andy Bell's blog:
+	https://piccalil.li/tutorial/creating-a-full-bleed-css-utility/
+*/

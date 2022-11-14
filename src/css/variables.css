@@ -1,0 +1,5 @@
+:root {
+	--fluid-type-min: 28px;
+	--fluid-type-max: 41px;
+	--fluid-type-target: 5vw;
+}
