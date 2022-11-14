@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+	"css": "gulp css",
     "start": "gulp css && npx eleventy --serve",
-    "build": "npx eleventy npx gulp run css"
+    "build": "npx eleventy && npm run css"
   },
   "keywords": [],
   "author": "",
