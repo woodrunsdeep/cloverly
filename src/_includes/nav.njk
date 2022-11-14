@@ -20,20 +20,25 @@
 		url: "/about/"
 }] %}
 
-<nav class="nav">
-	<ul class="nav__list">
-		{% for item in nav %}
+<nav class="nav nav--closed nav--no-js">
+	<button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+    </button>
+	<div class="nav__grid">
+		<ul class="nav__list">
+			{% for item in nav %}
+				<li class="nav__item">
+					<a href="{{ item.url }}" class="nav__link">{{ item.title }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+		<ul class="nav__list">
 			<li class="nav__item">
-				<a href="{{ item.url }}" class="nav__link">{{ item.title }}</a>
+				<a href="/login/" class="nav__link">Login</a>
 			</li>
-		{% endfor %}
-	</ul>
-	<ul class="nav__list">
-		<li class="nav__item">
-			<a href="/login/" class="nav__link">Login</a>
-		</li>
-		<li class="nav__item">
-			<a href="/api-keys/" class="nav__link button">Get API Keys</a>
-		</li>
-	</ul>
+			<li class="nav__item">
+				<a href="/api-keys/" class="nav__link button">Get API Keys</a>
+			</li>
+		</ul>
+	</div>
 </nav>
