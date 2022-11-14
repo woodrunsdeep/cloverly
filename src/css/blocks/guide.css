@@ -1,0 +1,36 @@
+.guide {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	column-gap: 100px;
+}
+
+.guide__slogan {
+	font-weight: 400;
+	font-size: clamp(
+    	var(--fluid-type-min, 1.75rem),
+    	calc(1rem + var(--fluid-type-target, 3vw)),
+    	var(--fluid-type-max, 3rem)
+  	);
+	line-height: 1.4;
+
+	color: #013A51;
+}
+
+.guide__steps {
+	@mixin list-reset;
+}
+
+.guide__link {
+	padding: 7px 40px;
+	box-shadow: 0 0 0 2px #00CA90;
+	border-radius: 50px;
+
+	font-size: 14px;
+	line-height: 1.1;
+
+	/* display: flex;
+	align-items: center;
+	text-align: center; */
+
+	color: #013A51;
+}

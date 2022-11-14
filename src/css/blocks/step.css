@@ -1,0 +1,22 @@
+.step__title {
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 1.4;
+
+	color: #013A51;
+}
+
+.step__text {
+	font-size: 15px;
+	line-height: 1.5;
+
+	color: #5C7782;
+}
+
+.step__title--icon-map::before {
+	content: "";
+	background-image: url('/img/icon-map.svg');
+	width: 98px;
+	height: 102px;
+	display: block;
+}

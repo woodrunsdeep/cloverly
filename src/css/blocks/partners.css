@@ -1,0 +1,22 @@
+.partners {
+	display: grid;
+	background-color: white;
+	list-style: none;
+	padding: 20px;
+	gap: 35px;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+ .partners__item {
+	align-self: center;
+	text-align: center;
+}
+
+
+.partners__link {
+	display: block;
+	outline-offset: 4px;
+}

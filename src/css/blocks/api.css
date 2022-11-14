@@ -1,0 +1,32 @@
+.api {
+	min-height: 600px;
+
+	background-image: url('/img/map.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+
+.api__title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.3;
+
+	text-align: center;
+
+	color: #00CA90;
+}
+
+.api__slogan {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.3;
+
+	color: #013A51;
+}
+
+.api__text {
+	font-size: 18px;
+	line-height: 1.4;
+	color: #013A51;
+}

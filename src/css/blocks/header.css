@@ -1,0 +1,13 @@
+.header {
+	background-color: #1FBD8A;
+	padding-block: 1em;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 6px 10px rgba(19, 40, 29, 0.1);
+	position: sticky;
+	top: 0;
+}
+
+.header__link {
+	align-self: center;
+}
